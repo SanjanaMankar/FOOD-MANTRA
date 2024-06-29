@@ -1,0 +1,63 @@
+body {
+    background-image: url('./login.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start; /* Align items to the start of the container */
+    height: 100vh;
+    margin-right: 10%;
+    padding-top: 5%; /* Add padding to move the form upwards */
+}
+
+.text {
+    color: rgba(230, 53, 246, 0.996);
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+}
+
+.form-card {
+    max-width: 400px;
+    width: 100%;
+    background-color:rgba(113, 219, 225, 0.374);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.text-center {
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.underline-text a {
+    text-decoration: underline;
+}
+
+.toggle-password {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.forgot-password-link {
+    font-weight: bold;
+}
