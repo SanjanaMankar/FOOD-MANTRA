@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veggie</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<link rel="stylesheet" href="Veggie.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+<div class="Container">
+    <div class="content">
+        <h1>VEGGIE</h1>
+        <p>Veggie Delights: Nourishing Your Body, Soul, and Planet!</p>
+
+        <div class="filter">
+            <label for="filter">Filter:</label>
+            <select id="filter">
+                <option value="all">All</option>
+                <option value="veg">Veg</option>
+                <option value="non-veg">Non-veg</option>
+                <option value="snack">Snacks</option>
+                <option value="sweet">Sweets</option>
+                <option value="beverages">Beverages</option>
+            </select>
+            <label for="sort">Sort By:</label>
+            <select id="sort">
+                <option value="popularity">Popularity</option>
+                <option value="rating">Rating</option>
+                <option value="delivery-time">Delivery Time</option>
+            </select>
+        </div>
+
+        <div class="restaurants">
+            <div class="restaurant">
+                <img src="./veggie/shahi paneer.jpg" alt="Restaurant Image">
+                <div class="restaurant-info">
+                    <h3>Sahi Paneer</h3>
+                    <p>Rich and creamy paneer in a flavorful tomato-based sauce with spices and nuts, served with basmati rice or naan.</p>
+                    <div class="rating">
+                        <span>4.3</span>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="info-row">
+                        <div class="price">Price: ₹290</div>
+                        <div class="time">20-30 mins</div>
+                        <div class="add-to-cart">
+                            <input type="number" value="1" min="1" max="10" id="quantity">
+                            <button class="btn btn-primary">ADD</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="restaurant">
+                <img src="./veggie/paneer masala.jpg" alt="Restaurant Image">
+                <div class="restaurant-info">
+                    <h3>Masala Paneer</h3>
+                    <p>Paneer marinated in spices and yogurt, grilled or cooked in a tomato-based sauce, served with basmati rice or roti.</p>
+                    <div class="rating">
+                        <span>4.5</span>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="info-row">
+                        <div class="price">Price: ₹280</div>
+                        <div class="time">30-40 mins</div>
+                        <div class="add-to-cart">
+                            <input type="number" value="1" min="1" max="10" id="quantity">
+                            <button class="btn btn-primary">ADD</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="restaurant">
+                <img src="./veggie/palak paneer.jpg" alt="Restaurant Image">
+                <div class="restaurant-info">
+                    <h3>Palak paneer</h3>
+                    <p>Paneer cooked in a spinach puree with garlic, ginger, and spices, served with basmati rice or roti.</p>
+                    <div class="rating">
+                        <span>4.2</span>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="info-row">
+                        <div class="price">Price: ₹250</div>
+                        <div class="time">20-25 mins</div>
+                        <div class="add-to-cart">
+                            <input type="number" value="1" min="1" max="10" id="quantity">
+                            <button class="btn btn-primary">ADD</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="restaurant">
+                <img src="./veggie/veg kolhapuri.jpg" alt="Restaurant Image">
+                <div class="restaurant-info">
+                    <h3>Veg Kolhapuri</h3>
+                    <p>Spicy vegetable curry from Kolhapur with coconut, poppy seeds, and sesame seeds, served with rice or bread.</p>
+                    <div class="rating">
+                        <span>4.2</span>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="info-row">
+                        <div class="price">Price: ₹260</div>
+                        <div class="time">30-35 mins</div>
+                        <div class="add-to-cart">
+                            <input type="number" value="1" min="1" max="10" id="quantity">
+                            <button class="btn btn-primary">ADD</button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="restaurant">
+                    <img src="./veggie/paneer burji.jpg" alt="Restaurant Image">
+                    <div class="restaurant-info">
+                        <h3>Paneer Burji</h3>
+                        <p>Scrambled paneer with onions, tomatoes, and spices, served with pav, roti, or rice, garnished with cilantro and lemon.</p>
+                        <div class="rating">
+                            <span>4.4</span>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="info-row">
+                            <div class="price">Price: ₹280</div>
+                            <div class="time">30-40 mins</div>
+                            <div class="add-to-cart">
+                                <input type="number" value="1" min="1" max="10" id="quantity">
+                                <button class="btn btn-primary">ADD</button>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="restaurant">
+                        <img src="./veggie/malai kofta.jpg" alt="Restaurant Image">
+                        <div class="restaurant-info">
+                            <h3>Malai Kofta</h3>
+                            <p>Paneer and potato dumplings in a creamy tomato-based sauce with cardamom, saffron, and nuts, served with basmati rice or naan.</p>
+                            <div class="rating">
+                                <span>4.0</span>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="info-row">
+                                <div class="price">Price: ₹300</div>
+                                <div class="time">30-35 mins</div>
+                                <div class="add-to-cart">
+                                    <input type="number" value="1" min="1" max="10" id="quantity">
+                                    <button class="btn btn-primary">ADD</button>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="restaurant">
+                            <img src="./veggie/matar masala.jpg" alt="Restaurant Image">
+                            <div class="restaurant-info">
+                                <h3>Matar Masala</h3>
+                                <p>Green peas in a creamy tomato-based sauce with spices and herbs, sometimes with paneer or nuts, served with rice or roti.</p>
+                                <div class="rating">
+                                    <span>4.2</span>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="info-row">
+                                    <div class="price">Price: ₹270</div>
+                                    <div class="time">30-40 mins</div>
+                                    <div class="add-to-cart">
+                                        <input type="number" value="1" min="1" max="10" id="quantity">
+                                        <button class="btn btn-primary">ADD</button>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="restaurant">
+                                <img src="./veggie/PBM.jpg" alt="Restaurant Image">
+                                <div class="restaurant-info">
+                                    <h3>Paneer Butter Masala</h3>
+                                    <p>Paneer in a creamy tomato-based sauce with butter and spices, served with basmati rice, naan, or roti.</p>
+                                    <div class="rating">
+                                        <span>4.5</span>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="info-row">
+                                        <div class="price">Price: ₹300</div>
+                                        <div class="time">35-45 mins</div>
+                                        <div class="add-to-cart">
+                                            <input type="number" value="1" min="1" max="10" id="quantity">
+                                            <button class="btn btn-primary">ADD</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="restaurant">
+                                    <img src="./veggie/matar paneer.jpg" alt="Restaurant Image">
+                                    <div class="restaurant-info">
+                                        <h3>Paneer Matar Masala</h3>
+                                        <p>Paneer in a creamy tomato-based sauce with butter and spices, served with basmati rice, naan, or roti.</p>
+                                        <div class="rating">
+                                            <span>4.6</span>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="info-row">
+                                            <div class="price">Price: ₹230</div>
+                                            <div class="time">25-35 mins</div>
+                                            <div class="add-to-cart">
+                                                <input type="number" value="1" min="1" max="10" id="quantity">
+                                                <button class="btn btn-primary">ADD</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
