@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: rgb(254, 252, 233);
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 40px;
+  background-color: #f6f089;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.navbar-brand {
+  color: orangered !important;
+  font-size: 24px;
+}
+
+.navbar ul {
+  list-style-type: none;
+}
+
+.navbar ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+.navbar ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.popular-cuisines {
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Center the section vertically */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.cuisine {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px; /* Add some margin between items */
+  transition: transform 0.3s, box-shadow 0.3s; /* Add transition for smooth hover effect */
+}
+
+.cuisine a {
+  display: block;
+  width: 250px; /* Define width for the circle */
+  height: 250px; /* Define height for the circle */
+  border-radius: 50%;
+  overflow: hidden;
+  text-decoration: none; /* Remove underline from links */
+  transition: transform 0.3s, box-shadow 0.3s; /* Add transition for smooth hover effect */
+}
+
+.cuisine a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%; /* Ensure images are circular */
+  transition: transform 0.3s; /* Add transition for smooth hover effect */
+}
+
+.cuisine a:hover {
+  transform: scale(1.15);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cuisine a:hover img {
+  transform: scale(1.1); /* Slightly increase the image size on hover */
+}
+
+.cuisine-title {
+  font-size: 20px;
+  margin-top: 10px; /* Add some space between the image and title */
+  text-align: center;
+  font-weight: bold;
+  font-family: sans-serif;
+}
