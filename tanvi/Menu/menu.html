@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body{
+            background-image: url(./menu.jpeg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position:relative;
+            height: 750px;
+            width: 100%;
+            margin: 0;
+            background-color:rgb(198, 240, 198) ;
+        
+        }
+        
+        .popular-cuisines {
+            padding: 50px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; 
+            box-sizing: border-box; 
+          }
+          
+          .cuisine {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px; 
+            transition: transform 0.3s, box-shadow 0.3s; 
+          }
+          
+          .cuisine a {
+            display: block;
+            width: 250px; 
+            height: 250px; 
+            border-radius: 50%;
+            overflow: hidden;
+            text-decoration: none; 
+            transition: transform 0.3s, box-shadow 0.3s; 
+          }
+          
+          .cuisine a img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%; 
+            transition: transform 0.3s; 
+          }
+          
+          .cuisine a:hover {
+            transform: scale(1.15);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+          }
+          
+          .cuisine a:hover img {
+            transform: scale(1.1); 
+          }
+          
+          .cuisine-title {
+            font-size: 20px;
+            margin-top: 10px;
+            text-align: center;
+            font-weight: bold;
+            font-family: sans-serif;
+            color: aliceblue;
+          }
+
+          .heading{
+            color: rgb(246, 190, 5);
+            text-align: center;
+            margin-top: 2%;
+            font-weight: bold;
+          }
+          
+     
+    </style>
+</head>
+
+<main>
+    <h1 class="heading">MENU</h1>
+    <section class="popular-cuisines">
+      <div class="cuisine">
+        <a href="../Veg/search.html">
+        <img src="./veg.jpg" alt="Veg"/>
+        </a>
+        <h3 class="cuisine-title">Veg</h3>
+      </div>
+
+      <div class="cuisine">
+        <a href="../Non-veg/Non-veg.html">
+        <img src="./nonveg.jpg" alt="non-veg" />
+      </a>
+        <h3 class="cuisine-title">Non-Veg</h3>
+      </div>
+
+      <div class="cuisine">
+        <a href="../Snacks/snacks.html">
+        <img src="./snacks.jpg" alt="snacks" />
+      </a>
+        <h3 class="cuisine-title">Snacks</h3>
+      </div>
+
+      <div class="cuisine">
+        <a href="../Beverages/Beverages.html">
+        <img src="./beverages.jpg" alt="beverages" />
+      </a>
+        <h3 class="cuisine-title">Beverages</h3>
+      </div>
+
+      <div class="cuisine">
+        <a href="../Sweet/">
+        <img src="./sweet.jpg" alt="Sweet" />
+        </a>
+        <h3 class="cuisine-title">Sweet</h3>
+      </div>
+    </section>
+  </main>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
