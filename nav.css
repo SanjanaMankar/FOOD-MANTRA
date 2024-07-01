@@ -1,0 +1,36 @@
+/* Custom styles for the navbar */
+.navbar-nav .nav-item .nav-link {
+    color: #ffffff !important;
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+  
+  .navbar-nav .nav-item .btn-primary {
+    padding: 5px 15px;
+    margin-left: 10px;
+  }
+  
+  .navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .navbar-dark .navbar-toggler {
+    border-color:orangered;
+  }
+  
+  .form-inline .form-control {
+    width: auto;
+    margin-right: 10px;
+  }
+  
+  .form-inline .btn {
+    margin-left: 10px;
+  }
+  
+  @media (max-width: 767px) {
+    .navbar-nav {
+      text-align: center;
+    }
+  }
+  
