@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cakes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="Veggie.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+<div class="Container">
+    <div class="content">
+        <h1>CAKES</h1>
+        <p>Celebrate with our delightful range of cakes, perfect for every occasion!</p>
+
+        <div class="filter">
+            <label for="filter">Filter:</label>
+            <select id="filter">
+                <option value="all">All</option>
+                <option value="veg">Veg</option>
+                <option value="non-veg">Non-veg</option>
+                <option value="snack">Snacks</option>
+                <option value="sweet">Sweets</option>
+                <option value="beverages">Beverages</option>
+            </select>
+            <label for="sort">Sort By:</label>
+            <select id="sort">
+                <option value="popularity">Popularity</option>
+                <option value="price">Price</option>
+                <option value="delivery-time">Delivery Time</option>
+            </select>
+        </div>
+
+        <div class="restaurants">
+            <div class="restaurant">
+                <img src="./cake/Chocolate Cake.jpg" alt="Chocolate Cake">
+                <div class="restaurant-info">
+                    <h3>Chocolate Cake</h3>
+                    <p>Moist and rich, this decadent cake is a chocolate lover's dream come true.</p>
+                    <div class="rating">
+                        <span>4.5</span>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="info-row">
+                        <div class="price">Price: ₹150</div>
+                        <div class="time">30-45 mins</div>
+                        <div class="add-to-cart">
+                            <input type="number" value="1" min="1" max="10" id="quantity">
+                            <button class="btn btn-primary">ADD</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="restaurant">
+                <img src="./cake/Vanilla Cake.jpg" alt="Vanilla Cake">
+                <div class="restaurant-info">
+                    <h3>Vanilla Cake</h3>
+                    <p>A classic and versatile cake, perfect for any occasion, with a delicate balance of sweetness and flavor.</p>
+                    <div class="rating">
+                        <span>4.7</span>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="info-row">
+                        <div class="price">Price: ₹130</div>
+                        <div class="time">30-45 mins</div>
+                        <div class="add-to-cart">
+                            <input type="number" value="1" min="1" max="10" id="quantity">
+                            <button class="btn btn-primary">ADD</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="restaurant">
+                <img src="./cake/Red Velvet Cake.jpg" alt="Red Velvet Cake">
+                <div class="restaurant-info">
+                    <h3>Red Velvet Cake</h3>
+                    <p>A stunning, deep-red colored cake with a subtle cocoa flavor and a hint of tanginess.</p>
+                    <div class="rating">
+                        <span>4.6</span>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="info-row">
+                        <div class="price">Price: ₹160</div>
+                        <div class="time">30-45 mins</div>
+                        <div class="add-to-cart">
+                            <input type="number" value="1" min="1" max="10" id="quantity">
+                            <button class="btn btn-primary">ADD</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="restaurant">
+                <img src="./cake/Carrot Cake.jpg" alt="Carrot Cake">
+                <div class="restaurant-info">
+                    <h3>Carrot Cake</h3>
+                    <p>A spiced, moist, and flavorful cake packed with shredded carrots, walnuts, and a hint of sweetness.</p>
+                    <div class="rating">
+                        <span>4.4</span>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="info-row">
+                        <div class="price">Price: ₹140</div>
+                        <div class="time">30-45 mins</div>
+                        <div class="add-to-cart">
+                            <input type="number" value="1" min="1" max="10" id="quantity">
+                            <button class="btn btn-primary">ADD</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="restaurant">
+                <img src="./cake/Lemon Cake.jpg" alt="Lemon Cake">
+                <div class="restaurant-info">
+                    <h3>Lemon Cake</h3>
+                    <p>A bright and citrusy cake, bursting with fresh lemon zest and juice, perfect for springtime celebrations.</p>
+                    <div class="rating">
+                        <span>4.5</span>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="info-row">
+                        <div class="price">Price: ₹150</div>
+                        <div class="time">30-45 mins</div>
+                        <div class="add-to-cart">
+                            <input type="number" value="1" min="1" max="10" id="quantity">
+                            <button class="btn btn-primary">ADD</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="restaurant">
+                <img src="./cake/Coffee Cake.jpg" alt="Coffee Cake">
+                <div class="restaurant-info">
+                    <h3>Coffee Cake</h3>
+                    <p>A sweet and savory cake, loaded with cinnamon, sugar, and crumbly streusel topping, perfect for breakfast or brunch.</p>
+                    <div class="rating">
+                        <span>4.3</span>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="info-row">
+                        <div class="price">Price: ₹140</div>
+                        <div class="time">30-45 mins</div>
+                        <div class="add-to-cart">
+                            <input type="number" value="1" min="1" max="10" id="quantity">
+                            <button class="btn btn-primary">ADD</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="restaurant">
+                <img src="./cake/Pound Cake.jpg" alt="Pound Cake">
+                <div class="restaurant-info">
+                    <h3>Pound Cake</h3>
+                    <p>A dense and buttery cake, rich in flavor and texture, with a subtle sweetness and a crumbly crust.</p>
+                    <div class="rating">
+                        <span>4.5</span>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="info-row">
+                        <div class="price">Price: ₹200</div>
+                        <div class="time">30-45 mins</div>
+                        <div class="add-to-cart">
+                            <input type="number" value="1" min="1" max="10" id="quantity">
+                            <button class="btn btn-primary">ADD</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="restaurant">
+                <img src="./cake/Cheesecake.jpg" alt="Pound Cake">
+                <div class="restaurant-info">
+                    <h3>Cheesecake</h3>
+                    <p>A creamy and rich dessert, blending the tanginess of cream cheese with the sweetness of sugar and vanilla.</p>
+                    <div class="rating">
+                        <span>4.6</span>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="info-row">
+                        <div class="price">Price: ₹180</div>
+                        <div class="time">30-45 mins</div>
+                        <div class="add-to-cart">
+                            <input type="number" value="1" min="1" max="10" id="quantity">
+                            <button class="btn btn-primary">ADD</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="restaurant">
+                <img src="./cake/Tiramisu.jpg" alt="Pound Cake">
+                <div class="restaurant-info">
+                    <h3>Tiramisu</h3>
+                    <p>A classic Italian dessert, layering ladyfingers with espresso, mascarpone, and cocoa, creating a decadent and creamy treat.</p>
+                    <div class="rating">
+                        <span>4.3</span>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="info-row">
+                        <div class="price">Price: ₹210</div>
+                        <div class="time">30-45 mins</div>
+                        <div class="add-to-cart">
+                            <input type="number" value="1" min="1" max="10" id="quantity">
+                            <button class="btn btn-primary">ADD</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+            

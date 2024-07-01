@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beef</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<link rel="stylesheet" href="Veggie.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+<div class="Container">
+    <div class="content">
+        <h1>BEEF DISHES</h1>
+        <p>Treat yourself to our mouthwatering beef dishes, expertly prepared to deliver a sensational taste experience that will leave you craving more!</p>
+
+        <div class="filter">
+            <label for="filter">Filter:</label>
+            <select id="filter">
+                <option value="all">All</option>
+                <option value="veg">Veg</option>
+                <option value="non-veg">Non-veg</option>
+                <option value="snacks">Snacks</option>
+                <option value="sweet">Sweet</option>
+                <option value="beverages">Beverages</option>
+            </select>
+            <label for="sort">Sort By:</label>
+            <select id="sort">
+                <option value="popularity">Popularity</option>
+                <option value="rating">Rating</option>
+                <option value="delivery-time">Delivery Time</option>
+            </select>
+        </div>
+
+        <div class="restaurants">
+            <div class="restaurant">
+                <img src="./Beef/steak.jpeg" alt="Restaurant Image">
+                <div class="restaurant-info">
+                    <h3>Steak</h3>
+                    <p>Juicy and tender grilled beef steak, seasoned to perfection and served with sides.</p>
+                    <div class="rating">
+                        <span>4.2</span>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="info-row">
+                        <div class="price">Price: ₹1200</div>
+                        <div class="time">40-45 mins</div>
+                        <div class="add-to-cart">
+                            <input type="number" value="1" min="1" max="10" id="quantity">
+                            <button class="btn btn-primary">ADD</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="restaurant">
+                <img src="./Beef/Beef Stew.jpg" alt="Restaurant Image">
+                <div class="restaurant-info">
+                    <h3>Beef Stew</h3>
+                    <p>Hearty and comforting stew with tender beef chunks, vegetables, and rich broth.</p>
+                    <div class="rating">
+                        <span>4.7</span>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="info-row">
+                        <div class="price">Price: ₹800</div>
+                        <div class="time">30-35 mins</div>
+                        <div class="add-to-cart">
+                            <input type="number" value="1" min="1" max="10" id="quantity">
+                            <button class="btn btn-primary">ADD</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="restaurant">
+                <img src="./Beef/Beef Stroganoff.jpg" alt="Restaurant Image">
+                <div class="restaurant-info">
+                    <h3>Beef Stroganoff</h3>
+                    <p>Creamy and savory dish with tender beef strips, mushrooms, and onions served over noodles or rice.</p>
+                    <div class="rating">
+                        <span>4.6</span>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="info-row">
+                        <div class="price">Price: ₹900</div>
+                        <div class="time">40-45 mins</div>
+                        <div class="add-to-cart">
+                            <input type="number" value="1" min="1" max="10" id="quantity">
+                            <button class="btn btn-primary">ADD</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="restaurant">
+                <img src="./Beef/Roast Beef.jpg" alt="Restaurant Image">
+                <div class="restaurant-info">
+                    <h3>Roast Beef</h3>
+                    <p>Succulent roasted beef, perfectly seasoned and cooked to your preferred doneness.</p>
+                    <div class="rating">
+                        <span>4.4</span>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="info-row">
+                        <div class="price">Price: ₹1100</div>
+                        <div class="time">35-40 mins</div>
+                        <div class="add-to-cart">
+                            <input type="number" value="1" min="1" max="10" id="quantity">
+                            <button class="btn btn-primary">ADD</button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="restaurant">
+                    <img src="./Beef/Beef Tacos" alt="Restaurant Image">
+                    <div class="restaurant-info">
+                        <h3>Beef Tacos</h3>
+                        <p>Flavorful beef filling in soft or crispy tortillas, topped with fresh vegetables, cheese, and sauces.</p>
+                        <div class="rating">
+                            <span>4.6</span>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="info-row">
+                            <div class="price">Price: ₹500</div>
+                            <div class="time">25-30 mins</div>
+                            <div class="add-to-cart">
+                                <input type="number" value="1" min="1" max="10" id="quantity">
+                                <button class="btn btn-primary">ADD</button>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="restaurant">
+                        <img src="./Beef/Beef Wellington" alt="Restaurant Image">
+                        <div class="restaurant-info">
+                            <h3>Beef Wellington</h3>
+                            <p>Elegant dish featuring a fillet steak coated with pâté and duxelles, wrapped in puff pastry and baked.</p>
+                            <div class="rating">
+                                <span>4.5</span>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="info-row">
+                                <div class="price">Price: ₹1500</div>
+                                <div class="time">40-45 mins</div>
+                                <div class="add-to-cart">
+                                    <input type="number" value="1" min="1" max="10" id="quantity">
+                                    <button class="btn btn-primary">ADD</button>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="restaurant">
+                            <img src="./Beef/Beef Chili.jpg" alt="Restaurant Image">
+                            <div class="restaurant-info">
+                                <h3>Beef Chili</h3>
+                                <p>Spicy and hearty chili with ground beef, beans, tomatoes, and a blend of spices.</p>
+                                <div class="rating">
+                                    <span>4.7</span>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="info-row">
+                                    <div class="price">Price: ₹700</div>
+                                    <div class="time">35-40 mins</div>
+                                    <div class="add-to-cart">
+                                        <input type="number" value="1" min="1" max="10" id="quantity">
+                                        <button class="btn btn-primary">ADD</button>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="restaurant">
+                                <img src="./Beef/Beef Kebabs.jpg" alt="Restaurant Image">
+                                <div class="restaurant-info">
+                                    <h3>Beef Kebabs</h3>
+                                    <p>Skewers of marinated beef grilled to perfection, served with dipping sauces.</p>
+                                    <div class="rating">
+                                        <span>4.5</span>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="info-row">
+                                        <div class="price">Price: ₹600</div>
+                                        <div class="time">30-40 mins</div>
+                                        <div class="add-to-cart">
+                                            <input type="number" value="1" min="1" max="10" id="quantity">
+                                            <button class="btn btn-primary">ADD</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="restaurant">
+                                    <img src="./Beef/Beef Bourguignon.jpg" alt="Restaurant Image">
+                                    <div class="restaurant-info">
+                                        <h3>Beef Bourguignon</h3>
+                                        <p>Classic French dish with beef braised in red wine, accompanied by mushrooms, onions, and bacon.</p>
+                                        <div class="rating">
+                                            <span>4.8</span>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="info-row">
+                                            <div class="price">Price: ₹1000</div>
+                                            <div class="time">40-45 mins</div>
+                                            <div class="add-to-cart">
+                                                <input type="number" value="1" min="1" max="10" id="quantity">
+                                                <button class="btn btn-primary">ADD</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

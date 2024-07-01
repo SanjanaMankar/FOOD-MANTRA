@@ -19,10 +19,10 @@ body {
 .container {
     display: flex;
     justify-content: flex-end;
-    align-items: flex-start; /* Align items to the start of the container */
+    align-items: flex-start; 
     height: 100vh;
     margin-right: 10%;
-    padding-top: 5%; /* Add padding to move the form upwards */
+    padding-top: 5%; 
 }
 
 .text {

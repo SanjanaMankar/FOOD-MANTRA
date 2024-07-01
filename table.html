@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservation - Restaurant</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Custom styles for the reservation form */
+body {
+
+    background-image: url(./vdo.mp4/reservation.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:relative;
+    height: 750px;
+    width: 100%;
+    margin: 0;
+  
+
+  }
+  
+  .container {
+    max-width: 600px;
+    margin-bottom: 80px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(10, 5, 5, 0.1);
+  }
+  
+  h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color:white;
+    text-decoration: underline;
+  }
+  
+  .form-group label {
+    font-weight: bold;
+    color:white;
+    margin-top: 5%;
+  }
+  
+  .form-control {
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+  
+    margin-top: 5%;
+  }
+  
+  .form-control:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  .btn-primary {
+    background-color: #28a745;
+    border-color: #28a745;
+    transition: background-color 0.3s, border-color 0.3s;
+    margin-left: 35%;
+    margin-top: 5%;
+  }
+  
+  .btn-primary:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+  }
+  
+  .btn-block {
+    width: 100%;
+  }
+  
+  @media (max-width: 767px) {
+    .container {
+      padding: 20px;
+    }
+  }
+  
+  </style>
+</head>
+<body>
+  
+
+  <div class="container mt-5">
+    <h2 class="text-center mb-2">TABLE BOOKING</h2>
+    <form>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputName">Name</label>
+          <input type="text" class="form-control" id="inputName" placeholder="Full Name" required>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputEmail">Email</label>
+          <input type="email" class="form-control" id="inputEmail" placeholder="Email" required>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputPhone">Phone Number</label>
+          <input type="tel" class="form-control" id="inputPhone" placeholder="Phone Number" required>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputGuests">Number of Guests</label>
+          <input type="number" class="form-control" id="inputGuests" min="1" placeholder="Number of Guests" required>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputDate">Date</label>
+          <input type="date" class="form-control" id="inputDate" required>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputTime">Time</label>
+          <input type="time" class="form-control" id="inputTime" required>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit Details</button>
+    </form>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
