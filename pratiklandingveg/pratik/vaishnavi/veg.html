@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meal Mantra</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Custom styles for the navbar */
+    
+
+    body {
+      font-family: Arial, sans-serif;
+      
+      box-sizing: border-box;
+    }
+
+    /* Footer Styles */
+    .footer {
+      background-color: white;
+      color: black;
+      padding: 40px 0;
+    }
+
+    .footer-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .footer h3 {
+      margin-bottom: 20px;
+    }
+
+    .footer p {
+      margin: 0 0 10px;
+    }
+
+    .footer-about,
+    .footer-social,
+    .footer-contact {
+      flex: 1;
+      margin: 20px 0;
+    }
+
+    .footer-social ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-social li {
+      margin: 10px 0;
+    }
+
+    .footer-social a {
+      color: black;
+      text-decoration: none;
+    }
+
+    .footer-social a:hover {
+      text-decoration: underline;
+    }
+
+    .footer-bottom {
+      background-color: goldenrod;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    .footer-bottom p {
+      margin: 0;
+    }
+
+    @media (max-width: 768px) {
+      .footer-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .footer-about,
+      .footer-social,
+      .footer-contact {
+        text-align: center;
+        margin: 20px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-">
+    <a class="navbar-brand" href="#" style="color: black;">MEAL MANTRA</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#menu">Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link btn btn-success text-white" href="#reservation">Table booking</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#login">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#signup">Sign Up</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#cart">
+            <i class="fas fa-shopping-cart"></i> Cart
+            <span class="badge badge-pill badge-danger">0</span>
+          </a>
+        </li>
+      </ul>
+
+    </div>
+  </nav>
+
+  
+  <main class="container mt-4">
+    <!-- Non-veg options -->
+    <section>
+      <h2 class="heading">What's on your mind?</h2>
+      <div class="d-flex justify-content-between">
+        <div class="text-center">
+          <img src="./assets/images/biryani.jpg" alt="Biryani" class="img-fluid rounded-circle">
+          <p> Veg Biryani</p>
+        </div>
+        <div class="text-center">
+          <img src="assets/images/veg dish.jpg" alt="Chicken Curry" class="img-fluid rounded-circle">
+          <p>sabji</p>
+        </div>
+        <div class="text-center">
+          <img src="assets/images/chapati 1.webp" alt="Chapati" class="img-fluid rounded-circle">
+          <p>Chapati</p>
+        </div>
+        <div class="text-center">
+          <img src="./assets/images/kababs.jpg" alt="Kabab" class="img-fluid rounded-circle">
+          <p>starter</p>
+        </div>
+        <div class="text-center">
+          <img src="assets/images/thali veg.avif" alt="Fish" class="img-fluid rounded-circle">
+          <p>Thali</p>
+        </div>
+        <div class="text-center">
+          <img src="assets/images/plane rice.webp" alt="Prawns" class="img-fluid rounded-circle">
+          <p>Rice</p>
+        </div>
+        <div class="text-center">
+          <img src="assets/images/daltadka.jpg" alt="Manchurian Chicken" class="img-fluid rounded-circle">
+          <p>Daal</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Explore now -->
+    <div class="text-center mt-4">
+      <button class="btn btn-success btn-lg">Explore Now</button>
+    </div>
+
+<!-- banner -->
+    <div class="banner mt-4" >
+      <img src="./assets/images/banner2.jpg" alt="Banner" style="margin-right:50px;">
+    </div>
+
+    <!-- Top tiffins options in mess -->
+    <section>
+      <h2 class="heading">Top tiffins for you...</h2>
+      <div class="d-flex justify-content-between">
+        <div class="text-center">
+          <img src="./assets/images/nagpurlunchbox.jpg" alt="Nagpur Lunchbox" class="img-fluid rounded-circle">
+          <p><b>Nagpur Lunchbox</b></p>
+          <p>10:30 pm - 8:30 pm</p>
+        </div>
+        <div class="text-center">
+          <img src="./assets/images/priyanshmess.jpg" alt="Priyansh Tiffin Service" class="img-fluid rounded-circle">
+          <p><b>Priyansh Tiffin Service</b></p>
+          <p>11:30 pm - 10:30 pm</p>
+        </div>
+        <div class="text-center">
+          <img src="./assets/images/lavanyamess.jpg" alt="Lavanya Mess" class="img-fluid rounded-circle">
+          <p><b>Lavanya Mess</b></p>
+          <p>9:30 pm - 8:00 pm</p>
+        </div>
+        <div class="text-center">
+          <img src="./assets/images/shreemess.jpg" alt="Shree Mess" class="img-fluid rounded-circle">
+          <p><b>Shree Mess</b></p>
+          <p>8:30 pm - 9:30 pm</p>
+        </div>
+        <div class="text-center">
+          <img src="./assets/images/manishamess.jpg" alt="Manisha Tiffin Services" class="img-fluid rounded-circle">
+          <p><b>Manisha Tiffin Services</b></p>
+          <p>11:30 pm - 10:30 pm</p>
+        </div>
+        <div class="text-center">
+          <img src="./assets/images/tastebuds.jpg" alt="Taste Buds" class="img-fluid rounded-circle">
+          <p><b>Taste Buds</b></p>
+          <p>7:30 pm - 8:30 pm</p>
+        </div>
+        <div class="text-center">
+          <img src="./assets/images/jaybhole.jpg" alt="Jay Bhole Mess" class="img-fluid rounded-circle">
+          <p><b>Jay BHole Mess</b></p>
+          <p>9:30 pm - 10:30 pm</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- banner -->
+    <div class="banner mt-4">
+      <img src="./assets/images/banner1.jpg" alt="Banner">
+    </div>
+
+    <!-- Order tiffins -->
+    <section class="mt-5">
+      <h2 class="heading">Order Our Tiffins In Nagpur</h2>
+
+      <!-- chapati section -->
+      <h3 class="heading">Chapati</h3>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card">
+            <img src="./assets/images/plainchapati.jpg" class="card-img-top" alt="Chapati 1">
+            <div class="card-body">
+              <h5 class="card-title">Plain Chapati</h5> <!-- Dish name -->
+              <div class="d-flex justify-content-between">
+                <p class="card-text mb-1">Ratings:</p>
+                <div>
+                  <span class="fa fa-star rating-star" data-rating="1"></span>
+                  <span class="fa fa-star rating-star" data-rating="2"></span>
+                  <span class="fa fa-star rating-star" data-rating="3"></span>
+                  <span class="fa fa-star rating-star" data-rating="4"></span>
+                  <span class="fa fa-star rating-star" data-rating="5"></span>
+                </div>
+              </div>
+              <p class="card-text"><small class="text-muted">55-60 mins</small></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="card-text mb-1">Quantity:</p>
+                <div class="input-group quantity-selector">
+                  <div class="input-group-prepend">
+                    <button class="btn btn-outline-secondary" type="button" id="button-minus">-</button>
+                  </div>
+                  <input type="number" class="form-control" value="1" min="1">
+                  <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="button" id="button-plus">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card">
+            <img src="./assets/images/butterchapati.jpg" class="card-img-top" alt="Chapati 2">
+            <div class="card-body">
+              <h5 class="card-title">Butter Chapati</h5> <!-- Dish name -->
+              <div class="d-flex justify-content-between">
+                <p class="card-text mb-1">Ratings:</p>
+                <div>
+                  <span class="fa fa-star rating-star" data-rating="1"></span>
+                  <span class="fa fa-star rating-star" data-rating="2"></span>
+                  <span class="fa fa-star rating-star" data-rating="3"></span>
+                  <span class="fa fa-star rating-star" data-rating="4"></span>
+                  <span class="fa fa-star rating-star" data-rating="5"></span>
+                </div>
+              </div>
+              <p class="card-text"><small class="text-muted">55-60 mins</small></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="card-text mb-1">Quantity:</p>
+                <div class="input-group quantity-selector">
+                  <div class="input-group-prepend">
+                    <button class="btn btn-outline-secondary" type="button" id="button-minus">-</button>
+                  </div>
+                  <input type="number" class="form-control" value="1" min="1">
+                  <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="button" id="button-plus">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+
+        <div class="col-md-3">
+          <div class="card">
+            <img src="./assets/images/garlicchapati.jpg" class="card-img-top" alt="Chapati 3">
+            <div class="card-body">
+              <h5 class="card-title">Garlic Chapati</h5> <!-- Dish name -->
+              <div class="d-flex justify-content-between">
+                <p class="card-text mb-1">Ratings:</p>
+                <div>
+                  <span class="fa fa-star rating-star" data-rating="1"></span>
+                  <span class="fa fa-star rating-star" data-rating="2"></span>
+                  <span class="fa fa-star rating-star" data-rating="3"></span>
+                  <span class="fa fa-star rating-star" data-rating="4"></span>
+                  <span class="fa fa-star rating-star" data-rating="5"></span>
+                </div>
+              </div>
+              <p class="card-text"><small class="text-muted">55-60 mins</small></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="card-text mb-1">Quantity:</p>
+                <div class="input-group quantity-selector">
+                  <div class="input-group-prepend">
+                    <button class="btn btn-outline-secondary" type="button" id="button-minus">-</button>
+                  </div>
+                  <input type="number" class="form-control" value="1" min="1">
+                  <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="button" id="button-plus">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="col-md-3">
+          <div class="card">
+            <img src="./assets/images/wholewheat.jpg" class="card-img-top" alt="Chapati 4">
+            <div class="card-body">
+              <h5 class="card-title">Whole Wheat Chapati</h5> <!-- Dish name -->
+              <div class="d-flex justify-content-between">
+                <p class="card-text mb-1">Ratings:</p>
+                <div>
+                  <span class="fa fa-star rating-star" data-rating="1"></span>
+                  <span class="fa fa-star rating-star" data-rating="2"></span>
+                  <span class="fa fa-star rating-star" data-rating="3"></span>
+                  <span class="fa fa-star rating-star" data-rating="4"></span>
+                  <span class="fa fa-star rating-star" data-rating="5"></span>
+                </div>
+              </div>
+              <p class="card-text"><small class="text-muted">55-60 mins</small></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="card-text mb-1">Quantity:</p>
+                <div class="input-group quantity-selector">
+                  <div class="input-group-prepend">
+                    <button class="btn btn-outline-secondary" type="button" id="button-minus">-</button>
+                  </div>
+                  <input type="number" class="form-control" value="1" min="1">
+                  <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="button" id="button-plus">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+         <!-- Curry Section -->
+      <h3 class="heading">Curry</h3>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card">
+            <img src="assets/images/veg1.jpg" class="card-img-top" alt="Curry 1">
+            <div class="card-body">
+              <h5 class="card-title">Daal Bhaji</h5> <!-- Dish name -->
+              <div class="d-flex justify-content-between">
+                <p class="card-text mb-1">Ratings:</p>
+                <div>
+                  <span class="fa fa-star rating-star" data-rating="1"></span>
+                  <span class="fa fa-star rating-star" data-rating="2"></span>
+                  <span class="fa fa-star rating-star" data-rating="3"></span>
+                  <span class="fa fa-star rating-star" data-rating="4"></span>
+                  <span class="fa fa-star rating-star" data-rating="5"></span>
+                </div>
+              </div>
+              <p class="card-text"><small class="text-muted">55-60 mins</small></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="card-text mb-1">Quantity:</p>
+                <div class="input-group quantity-selector">
+                  <div class="input-group-prepend">
+                    <button class="btn btn-outline-secondary" type="button" id="button-minus">-</button>
+                  </div>
+                  <input type="number" class="form-control" value="1" min="1">
+                  <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="button" id="button-plus">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-3">
+          <div class="card">
+            <img src="assets/images/veg3.jpeg" class="card-img-top" alt="Curry 2">
+            <div class="card-body">
+              <h5 class="card-title">Aalu bhaji</h5> <!-- Dish name -->
+              <div class="d-flex justify-content-between">
+                <p class="card-text mb-1">Ratings:</p>
+                <div>
+                  <span class="fa fa-star rating-star" data-rating="1"></span>
+                  <span class="fa fa-star rating-star" data-rating="2"></span>
+                  <span class="fa fa-star rating-star" data-rating="3"></span>
+                  <span class="fa fa-star rating-star" data-rating="4"></span>
+                  <span class="fa fa-star rating-star" data-rating="5"></span>
+                </div>
+              </div>
+              <p class="card-text"><small class="text-muted">55-60 mins</small></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="card-text mb-1">Quantity:</p>
+                <div class="input-group quantity-selector">
+                  <div class="input-group-prepend">
+                    <button class="btn btn-outline-secondary" type="button" id="button-minus">-</button>
+                  </div>
+                  <input type="number" class="form-control" value="1" min="1">
+                  <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="button" id="button-plus">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-3">
+          <div class="card">
+            <img src="assets/images/veg4.jpg" class="card-img-top" alt="Curry 3">
+            <div class="card-body">
+              <h5 class="card-title">Panner</h5> <!-- Dish name -->
+              <div class="d-flex justify-content-between">
+                <p class="card-text mb-1">Ratings:</p>
+                <div>
+                  <span class="fa fa-star rating-star" data-rating="1"></span>
+                  <span class="fa fa-star rating-star" data-rating="2"></span>
+                  <span class="fa fa-star rating-star" data-rating="3"></span>
+                  <span class="fa fa-star rating-star" data-rating="4"></span>
+                  <span class="fa fa-star rating-star" data-rating="5"></span>
+                </div>
+              </div>
+              <p class="card-text"><small class="text-muted">55-60 mins</small></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="card-text mb-1">Quantity:</p>
+                <div class="input-group quantity-selector">
+                  <div class="input-group-prepend">
+                    <button class="btn btn-outline-secondary" type="button" id="button-minus">-</button>
+                  </div>
+                  <input type="number" class="form-control" value="1" min="1">
+                  <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="button" id="button-plus">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card">
+            <img src="assets/images/veg5.jpg" class="card-img-top" alt="Curry 3">
+            <div class="card-body">
+              <h5 class="card-title">Sprouts</h5> <!-- Dish name -->
+              <div class="d-flex justify-content-between">
+                <p class="card-text mb-1">Ratings:</p>
+                <div>
+                  <span class="fa fa-star rating-star" data-rating="1"></span>
+                  <span class="fa fa-star rating-star" data-rating="2"></span>
+                  <span class="fa fa-star rating-star" data-rating="3"></span>
+                  <span class="fa fa-star rating-star" data-rating="4"></span>
+                  <span class="fa fa-star rating-star" data-rating="5"></span>
+                </div>
+              </div>
+              <p class="card-text"><small class="text-muted">55-60 mins</small></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="card-text mb-1">Quantity:</p>
+                <div class="input-group quantity-selector">
+                  <div class="input-group-prepend">
+                    <button class="btn btn-outline-secondary" type="button" id="button-minus">-</button>
+                  </div>
+                  <input type="number" class="form-control" value="1" min="1">
+                  <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="button" id="button-plus">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><br>
+
+
+         <!-- Rice Section -->
+      <h3 class="heading"></h3><br>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card">
+            <img src="assets/images/veg6.jpeg" class="card-img-top" alt="Rice 1">
+            <div class="card-body">
+              <h5 class="card-title">Full Gobi</h5> <!-- Dish name -->
+              <div class="d-flex justify-content-between">
+                <p class="card-text mb-1">Ratings:</p>
+                <div>
+                  <span class="fa fa-star rating-star" data-rating="1"></span>
+                  <span class="fa fa-star rating-star" data-rating="2"></span>
+                  <span class="fa fa-star rating-star" data-rating="3"></span>
+                  <span class="fa fa-star rating-star" data-rating="4"></span>
+                  <span class="fa fa-star rating-star" data-rating="5"></span>
+                </div>
+              </div>
+              <p class="card-text"><small class="text-muted">55-60 mins</small></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="card-text mb-1">Quantity:</p>
+                <div class="input-group quantity-selector">
+                  <div class="input-group-prepend">
+                    <button class="btn btn-outline-secondary" type="button" id="button-minus">-</button>
+                  </div>
+                  <input type="number" class="form-control" value="1" min="1">
+                  <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="button" id="button-plus">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-3">
+          <div class="card">
+            <img src="assets/images/veg7.jpg" class="card-img-top" alt="Rice 1">
+            <div class="card-body">
+              <h5 class="card-title">Mashroum</h5> <!-- Dish name -->
+              <div class="d-flex justify-content-between">
+                <p class="card-text mb-1">Ratings:</p>
+                <div>
+                  <span class="fa fa-star rating-star" data-rating="1"></span>
+                  <span class="fa fa-star rating-star" data-rating="2"></span>
+                  <span class="fa fa-star rating-star" data-rating="3"></span>
+                  <span class="fa fa-star rating-star" data-rating="4"></span>
+                  <span class="fa fa-star rating-star" data-rating="5"></span>
+                </div>
+              </div>
+              <p class="card-text"><small class="text-muted">55-60 mins</small></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="card-text mb-1">Quantity:</p>
+                <div class="input-group quantity-selector">
+                  <div class="input-group-prepend">
+                    <button class="btn btn-outline-secondary" type="button" id="button-minus">-</button>
+                  </div>
+                  <input type="number" class="form-control" value="1" min="1">
+                  <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="button" id="button-plus">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-3">
+          <div class="card">
+            <img src="assets/images/veg.jpeg" class="card-img-top" alt="Rice 1">
+            <div class="card-body">
+              <h5 class="card-title">Baigan</h5> <!-- Dish name -->
+              <div class="d-flex justify-content-between">
+                <p class="card-text mb-1">Ratings:</p>
+                <div>
+                  <span class="fa fa-star rating-star" data-rating="1"></span>
+                  <span class="fa fa-star rating-star" data-rating="2"></span>
+                  <span class="fa fa-star rating-star" data-rating="3"></span>
+                  <span class="fa fa-star rating-star" data-rating="4"></span>
+                  <span class="fa fa-star rating-star" data-rating="5"></span>
+                </div>
+              </div>
+              <p class="card-text"><small class="text-muted">55-60 mins</small></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="card-text mb-1">Quantity:</p>
+                <div class="input-group quantity-selector">
+                  <div class="input-group-prepend">
+                    <button class="btn btn-outline-secondary" type="button" id="button-minus">-</button>
+                  </div>
+                  <input type="number" class="form-control" value="1" min="1">
+                  <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="button" id="button-plus">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-3">
+          <div class="card">
+            <img src="assets/images/veg8.jpg" class="card-img-top" alt="Rice 1">
+            <div class="card-body">
+              <h5 class="card-title">Fannas</h5> <!-- Dish name -->
+              <div class="d-flex justify-content-between">
+                <p class="card-text mb-1">Ratings:</p>
+                <div>
+                  <span class="fa fa-star rating-star" data-rating="1"></span>
+                  <span class="fa fa-star rating-star" data-rating="2"></span>
+                  <span class="fa fa-star rating-star" data-rating="3"></span>
+                  <span class="fa fa-star rating-star" data-rating="4"></span>
+                  <span class="fa fa-star rating-star" data-rating="5"></span>
+                </div>
+              </div>
+              <p class="card-text"><small class="text-muted">55-60 mins</small></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="card-text mb-1">Quantity:</p>
+                <div class="input-group quantity-selector">
+                  <div class="input-group-prepend">
+                    <button class="btn btn-outline-secondary" type="button" id="button-minus">-</button>
+                  </div>
+                  <input type="number" class="form-control" value="1" min="1">
+                  <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="button" id="button-plus">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- kabab Section -->
+      <h3 class="heading">Rice</h3>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card">
+            <img src="assets/images/JeeraRice.jpg" class="card-img-top" alt="Rice 1">
+            <div class="card-body">
+              <h5 class="card-title">Jeera Rice</h5> <!-- Dish name -->
+              <div class="d-flex justify-content-between">
+                <p class="card-text mb-1">Ratings:</p>
+                <div>
+                  <span class="fa fa-star rating-star" data-rating="1"></span>
+                  <span class="fa fa-star rating-star" data-rating="2"></span>
+                  <span class="fa fa-star rating-star" data-rating="3"></span>
+                  <span class="fa fa-star rating-star" data-rating="4"></span>
+                  <span class="fa fa-star rating-star" data-rating="5"></span>
+                </div>
+              </div>
+              <p class="card-text"><small class="text-muted">55-60 mins</small></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="card-text mb-1">Quantity:</p>
+                <div class="input-group quantity-selector">
+                  <div class="input-group-prepend">
+                    <button class="btn btn-outline-secondary" type="button" id="button-minus">-</button>
+                  </div>
+                  <input type="number" class="form-control" value="1" min="1">
+                  <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="button" id="button-plus">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card">
+            <img src="assets/images/FriedRice.jpg" class="card-img-top" alt="Rice 1">
+            <div class="card-body">
+              <h5 class="card-title">fried Rice</h5> <!-- Dish name -->
+              <div class="d-flex justify-content-between">
+                <p class="card-text mb-1">Ratings:</p>
+                <div>
+                  <span class="fa fa-star rating-star" data-rating="1"></span>
+                  <span class="fa fa-star rating-star" data-rating="2"></span>
+                  <span class="fa fa-star rating-star" data-rating="3"></span>
+                  <span class="fa fa-star rating-star" data-rating="4"></span>
+                  <span class="fa fa-star rating-star" data-rating="5"></span>
+                </div>
+              </div>
+              <p class="card-text"><small class="text-muted">55-60 mins</small></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="card-text mb-1">Quantity:</p>
+                <div class="input-group quantity-selector">
+                  <div class="input-group-prepend">
+                    <button class="btn btn-outline-secondary" type="button" id="button-minus">-</button>
+                  </div>
+                  <input type="number" class="form-control" value="1" min="1">
+                  <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="button" id="button-plus">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-3">
+          <div class="card">
+            <img src="assets/images/biryanirice.jpg" class="card-img-top" alt="Rice 1">
+            <div class="card-body">
+              <h5 class="card-title">Biryani Rice</h5> <!-- Dish name -->
+              <div class="d-flex justify-content-between">
+                <p class="card-text mb-1">Ratings:</p>
+                <div>
+                  <span class="fa fa-star rating-star" data-rating="1"></span>
+                  <span class="fa fa-star rating-star" data-rating="2"></span>
+                  <span class="fa fa-star rating-star" data-rating="3"></span>
+                  <span class="fa fa-star rating-star" data-rating="4"></span>
+                  <span class="fa fa-star rating-star" data-rating="5"></span>
+                </div>
+              </div>
+              <p class="card-text"><small class="text-muted">55-60 mins</small></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="card-text mb-1">Quantity:</p>
+                <div class="input-group quantity-selector">
+                  <div class="input-group-prepend">
+                    <button class="btn btn-outline-secondary" type="button" id="button-minus">-</button>
+                  </div>
+                  <input type="number" class="form-control" value="1" min="1">
+                  <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="button" id="button-plus">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-3">
+          <div class="card">
+            <img src="assets/images/plane rice.webp" class="card-img-top" alt="Rice 1">
+            <div class="card-body">
+              <h5 class="card-title">PLane Rice</h5> <!-- Dish name -->
+              <div class="d-flex justify-content-between">
+                <p class="card-text mb-1">Ratings:</p>
+                <div>
+                  <span class="fa fa-star rating-star" data-rating="1"></span>
+                  <span class="fa fa-star rating-star" data-rating="2"></span>
+                  <span class="fa fa-star rating-star" data-rating="3"></span>
+                  <span class="fa fa-star rating-star" data-rating="4"></span>
+                  <span class="fa fa-star rating-star" data-rating="5"></span>
+                </div>
+              </div>
+              <p class="card-text"><small class="text-muted">55-60 mins</small></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="card-text mb-1">Quantity:</p>
+                <div class="input-group quantity-selector">
+                  <div class="input-group-prepend">
+                    <button class="btn btn-outline-secondary" type="button" id="button-minus">-</button>
+                  </div>
+                  <input type="number" class="form-control" value="1" min="1">
+                  <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="button" id="button-plus">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <!-- Dal Section -->
+       <h3 class="heading">Daal</h3>
+       <div class="row">
+        <div class="col-md-3">
+          <div class="card">
+            <img src="./assets/images/butterdal.jpg" class="card-img-top" alt="Rice 1">
+            <div class="card-body">
+              <h5 class="card-title">Butter Dal</h5> <!-- Dish name -->
+              <div class="d-flex justify-content-between">
+                <p class="card-text mb-1">Ratings:</p>
+                <div>
+                  <span class="fa fa-star rating-star" data-rating="1"></span>
+                  <span class="fa fa-star rating-star" data-rating="2"></span>
+                  <span class="fa fa-star rating-star" data-rating="3"></span>
+                  <span class="fa fa-star rating-star" data-rating="4"></span>
+                  <span class="fa fa-star rating-star" data-rating="5"></span>
+                </div>
+              </div>
+              <p class="card-text"><small class="text-muted">55-60 mins</small></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="card-text mb-1">Quantity:</p>
+                <div class="input-group quantity-selector">
+                  <div class="input-group-prepend">
+                    <button class="btn btn-outline-secondary" type="button" id="button-minus">-</button>
+                  </div>
+                  <input type="number" class="form-control" value="1" min="1">
+                  <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="button" id="button-plus">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card">
+            <img src="./assets/images/daltadka.jpg" class="card-img-top" alt="Rice 1">
+            <div class="card-body">
+              <h5 class="card-title">Dal Tadka</h5> <!-- Dish name -->
+              <div class="d-flex justify-content-between">
+                <p class="card-text mb-1">Ratings:</p>
+                <div>
+                  <span class="fa fa-star rating-star" data-rating="1"></span>
+                  <span class="fa fa-star rating-star" data-rating="2"></span>
+                  <span class="fa fa-star rating-star" data-rating="3"></span>
+                  <span class="fa fa-star rating-star" data-rating="4"></span>
+                  <span class="fa fa-star rating-star" data-rating="5"></span>
+                </div>
+              </div>
+              <p class="card-text"><small class="text-muted">55-60 mins</small></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="card-text mb-1">Quantity:</p>
+                <div class="input-group quantity-selector">
+                  <div class="input-group-prepend">
+                    <button class="btn btn-outline-secondary" type="button" id="button-minus">-</button>
+                  </div>
+                  <input type="number" class="form-control" value="1" min="1">
+                  <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="button" id="button-plus">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-3">
+          <div class="card">
+            <img src="./assets/images/dal1.jpg" class="card-img-top" alt="Rice 1">
+            <div class="card-body">
+              <h5 class="card-title">Chana Dal</h5> <!-- Dish name -->
+              <div class="d-flex justify-content-between">
+                <p class="card-text mb-1">Ratings:</p>
+                <div>
+                  <span class="fa fa-star rating-star" data-rating="1"></span>
+                  <span class="fa fa-star rating-star" data-rating="2"></span>
+                  <span class="fa fa-star rating-star" data-rating="3"></span>
+                  <span class="fa fa-star rating-star" data-rating="4"></span>
+                  <span class="fa fa-star rating-star" data-rating="5"></span>
+                </div>
+              </div>
+              <p class="card-text"><small class="text-muted">55-60 mins</small></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="card-text mb-1">Quantity:</p>
+                <div class="input-group quantity-selector">
+                  <div class="input-group-prepend">
+                    <button class="btn btn-outline-secondary" type="button" id="button-minus">-</button>
+                  </div>
+                  <input type="number" class="form-control" value="1" min="1">
+                  <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="button" id="button-plus">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-3">
+          <div class="card">
+            <img src="./assets/images/dal2.jpg" class="card-img-top" alt="Rice 1">
+            <div class="card-body">
+              <h5 class="card-title">Mix dal</h5> <!-- Dish name -->
+              <div class="d-flex justify-content-between">
+                <p class="card-text mb-1">Ratings:</p>
+                <div>
+                  <span class="fa fa-star rating-star" data-rating="1"></span>
+                  <span class="fa fa-star rating-star" data-rating="2"></span>
+                  <span class="fa fa-star rating-star" data-rating="3"></span>
+                  <span class="fa fa-star rating-star" data-rating="4"></span>
+                  <span class="fa fa-star rating-star" data-rating="5"></span>
+                </div>
+              </div>
+              <p class="card-text"><small class="text-muted">55-60 mins</small></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="card-text mb-1">Quantity:</p>
+                <div class="input-group quantity-selector">
+                  <div class="input-group-prepend">
+                    <button class="btn btn-outline-secondary" type="button" id="button-minus">-</button>
+                  </div>
+                  <input type="number" class="form-control" value="1" min="1">
+                  <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="button" id="button-plus">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-about">
+        <h3>Restaurant Management</h3>
+        <p>Your go-to place for delicious food and excellent services.</p>
+      </div>
+      <div class="footer-social">
+        <h3>Follow Us</h3>
+        <ul class="social-links">
+          <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+          <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
+          <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+          <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h3>Contact Us</h3>
+        <p>Email: info@restaurant.com</p>
+        <p>Phone: (123) 456-7890</p>
+        <p>Address: 123 Food Street, Flavor Town</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Restaurant Management. All rights reserved.</p>
+    </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
+
