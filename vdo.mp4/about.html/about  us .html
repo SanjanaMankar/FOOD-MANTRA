@@ -1,161 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
-    <link rel="stylesheet" href=>
+    <title>About Us - Restaurant Management</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
-        .about-us {
-            margin-left: 60px;
-
-        }
-
         body {
-            background-color: black;
-            background-image: url(./about.jpg/bga.jpg);
-            background-size: cover;
-            background-repeat: no-repeat;
-            
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
         }
-
-        .about {
-            font-weight: bolder;
-            margin-top: 30px;
-            margin-left: 35px;
-            padding: 40px 0;
-            text-align: center;
-            color:black;
-            font-size: 2rem;
         
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
             
+        }
+        
+        header {
+            text-align: center;
+            padding: 20px 0;
+            background-color:green;
+            color:black;
+        }
+        
+        header h1 {
+            margin: 0;
+        }
+        
+        .about-us {
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            padding: 20px;
+        }
+        
+        .text-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px 0;
+            text-align: center;
+        }
+        
+        .text-container h2 {
+            color: #333;
+            margin-top: 0;
+        }
+        
+        .text-container p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        
+        .team {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            text-align: center;
+            margin: 20px 0;
             
         }
-
-        .team-container1{
-            padding-bottom: 10px;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 5px;
-        }
-        .team-container2{
-            padding-bottom: 10px;
-            padding :10px;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 5px;
-        }
-
+        
         .team-member {
-            position: relative;
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            overflow: hidden;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .team-member img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.3s ease;
+            flex: 1 1 200px;
+            margin: 10px;
+            max-width: 250px;
+            
             
         }
-
-        .team-member:hover {
-            transform: scale(1.1);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        
+        .team-member img {
+            max-width: 100%;
+            height: 50%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-
-        .team-member:hover img {
-            transform: scale(1.1);
+        
+        .team-member h3 {
+            margin: 10px 0 5px 0;
+            color: #333;
         }
-
-        .heading {
-            height: 70px;
-            width: 100;
-            display:flex ;
-            justify-content: space-evenly;
-            margin-left: auto;
+        
+        .team-member p {
+            margin: 0;
+            color: #777;
         }
-
-        .member {
+        .meet{
+            padding-left: 40%;
+            padding-bottom: 5%;
             color: black;
-            text-align: center;
-            font-size: 1.5rem;
-            text-transform: capitalize;
-
-
+            text-decoration: underline;
 
         }
-
-        .member1 {
-            color:white;
-            text-align: center;
-            font-size: 2rem;
-            text-transform: capitalize;
-        }
-
-        .nd {
-            position: relative;
-            display: flex;
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            overflow: hidden;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
+        
     </style>
 </head>
-
 <body>
-    <div class="about-us">
-        <h1 class="about">About Us</h1>
+    <div class="container">
+        <header>
+            <h1>About Us</h1>
+        </header>
+        <section class="about-us">
+            <div class="text-container">
+                <h2>Our Story</h2>
+                <p>Welcome to Restaurant Management, where our passion for culinary excellence meets exceptional service. Our management team is dedicated to providing you with the best dining experience possible. With years of experience in the industry, we pride ourselves on our commitment to quality, creativity, and customer satisfaction.</p>
+            </div>
+            <h2 class="meet">Meet the Management Team</h2>
+            <div class="team">
+                <div class="team-member">
+                    <img src="./about.jpg/pratik.png" alt="Member 1">
+                    <h3>Pratik Yergude</h3>
+                    <p>CEO</p>
+                </div>
+                <div class="team-member">
+                    <img src="./about.jpg/vaishu.jpg" alt="Member 2">
+                    <h3>vaishnavi Manmode</h3>
+                    <p>Head Chef</p>
+                </div>
+                <div class="team-member">
+                    <img src="./about.jpg/tanavip.jpg" alt="Member 3">
+                    <h3>Tanvi Talhan</h3>
+                    <p>Manager</p>
+                </div>
+                <div class="team-member">
+                    <img src="./about.jpg/WhatsApp Image 2024-06-16 at 14.18.04_d05f0015.jpg" alt="Member 4">
+                    <h3>Sanjana Mankar</h3>
+                    <p>Marketing Director</p>
+                </div>
+            </div>
+        </section>
     </div>
-    <div class="team-container1">
-
-        <div class="team-member">
-            <img src="./about.jpg/pratik.png" alt="Member 1">
-        </div>
-        <div class="team-member">
-            <img src="./about.jpg/vaishu.jpg" alt="Member 2">
-        </div>
-        </div>
-
-        <div class="heading">
-            <h1 class="member">Pratik Yergude <br>Frontend Developer</h1>
-            <h1 class="member"> Vaishnavi Manmode <br>Frontend Developer</h1>
-            
-
-
-        </div>
-        <div class="team-container2">
-        <div class="team-member">
-            <img src="./about.jpg/tanavip.jpg" alt="Member 3">
-        </div>
-        <div class="team-member">
-            <img src="./about.jpg/sanjana.png" alt="Member 3">
-        </div>
-
-    </div>
-    <div class="heading">
-        <h1 class="member">Tanavi Talhan <br>Frontend Developer</h1>
-        <h1 class="member"> Sanjana Mankar <br>Frontend Developer</h1>
-        
-
-
-     </div>
-    
-
-
 </body>
-
 </html>
