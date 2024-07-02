@@ -10,6 +10,141 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+    <style>
+        .navbar-nav .nav-item .nav-link {
+          color: black !important;
+          padding: 10px 15px;
+          font-size: 18px;
+          position: sticky;
+          font-weight: bolder;
+          margin-left: 5%;
+
+          
+    
+    
+        }
+    
+        .navbar-nav .nav-item .btn-primary {
+          padding: 5px 15px;
+          margin-left:20px;
+        }
+    
+        .nav-item:hover {
+          background-color: gold;
+    
+    
+        }
+    
+    
+        .navbar-brand {
+          font-size: 24px;
+          font-weight: bold;
+          color: black;
+          text-decoration: underline;
+          
+          
+        }
+        .logo{
+          height: 50px;
+          width: 100px;
+          margin-left: 5%;
+        }
+        
+    
+        .navbar-dark .navbar-toggler {
+          border-color: orangered;
+          color: black;
+        }
+    
+        .form-inline .form-control {
+          width: auto;
+          margin-right: 10px;
+          border: 2px solid black;
+          margin-left: 10%;
+        }
+    
+        .form-inline .btn {
+          margin-left: 10px;
+        }
+    
+        
+    
+        @media (max-width: 767px) {
+          .navbar-nav {
+            text-align: center;
+          }
+        }
+        .carousel-inner{
+          z-index: +1;
+          position: absolute;
+    
+        }
+        .carousel-item {
+          height: 90vh; /* Full viewport height */
+         
+        }
+    
+        .carousel-item img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+    
+        }
+        </style>
+      
+    
+    
+    
+    </head>
+    <body>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-">
+        <a class="navbar-brand" href="#" style="color: black;">
+          <img class="logo" src="../contact us/logo 1.jpg" alt="Logo" >
+        
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="./pratiklandingveg/pratik/vaishnavi/veg.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./tanvi/Menu/menu.html">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./vdo.mp4/about.html/about  us .html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./tanvi/contact us/Contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn btn-success text-white" href="./nav.html">Our Restaurant</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            
+          </form>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="./tanvi/Login/login.html">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./tanvi/Create/Create.html">Sign Up</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">
+                <i class="fas fa-shopping-cart"></i> Cart
+                <span class="badge badge-pill badge-danger">0</span>
+              </a>
+            </li>
+          </ul>
+    
+        </div>
+      </nav>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
@@ -209,9 +344,68 @@
                     </div>
                 </div>
             </div>
+   <!-- Cart Modal -->
+   <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="cartModalLabel">Shopping Cart</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div id="cart"></div>
+                <h3>Total: ₹<span id="total">0</span></h3>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Proceed to Checkout</button>
+            </div>
         </div>
     </div>
 </div>
+</div>
+</div>
+
+<script>
+    const cart = [];
+
+    document.querySelectorAll('.add-btn').forEach(button => {
+        button.addEventListener('click', function() {
+            const restaurant = this.closest('.restaurant');
+            const name = restaurant.getAttribute('data-name');
+            const price = parseInt(restaurant.getAttribute('data-price'));
+            const quantity = parseInt(restaurant.querySelector('.quantity').value);
+
+            const existingItem = cart.find(item => item.name === name);
+            if (existingItem) {
+                existingItem.quantity += quantity;
+            } else {
+                cart.push({ name, price, quantity });
+            }
+
+            updateCart();
+        });
+    });
+
+    function updateCart() {
+        const cartDiv = document.getElementById('cart');
+        const cartCount = document.getElementById('cart-count');
+        cartDiv.innerHTML = '';
+        let total = 0;
+        let count = 0;
+
+        cart.forEach(item => {
+            const itemTotal = item.price * item.quantity;
+            total += itemTotal;
+            count += item.quantity;
+            cartDiv.innerHTML += <div>${item.name}: ₹${item.price} x ${item.quantity} = ₹${itemTotal}</div>;
+        });
+
+        document.getElementById('total').innerText = total;
+        cartCount.innerText = count;
+    }
+</script>
 </body>
 </html>
+
 
