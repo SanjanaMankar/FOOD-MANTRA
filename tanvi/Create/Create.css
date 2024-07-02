@@ -34,7 +34,7 @@ body {
 .form-card {
     max-width: 400px;
     width: 100%;
-    background-color:rgba(222, 105, 217, 0.381);
+    background-color:whitesmoke;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
