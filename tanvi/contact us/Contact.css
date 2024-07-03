@@ -1,5 +1,5 @@
 body {
-    background-image: url('./Contact.png');
+    background-image: url('./contactus.png');
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -23,7 +23,7 @@ body {
 }
 
 .text {
-    color: rgba(235, 158, 4, 0.996);
+    color: black;
     font-weight: bold;
     text-align: center;
     padding: 20px;
@@ -32,12 +32,13 @@ body {
 form {
     max-width: 400px;
     width: 100%;
-    background-color: #FAEEE1;
+    background-color: whitesmoke;
     padding: 50px;
     border-radius: 8px;
     font-size: 15px;
     font-weight: bold;
     color: rgb(19, 23, 24);
 }
+
 
 

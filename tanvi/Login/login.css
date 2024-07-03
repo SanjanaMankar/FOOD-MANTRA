@@ -1,5 +1,5 @@
 body {
-    background-image: url('./login.png');
+    background-image: url('./login\ \(2\).png');
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -26,7 +26,7 @@ body {
 }
 
 .text {
-    color: rgba(230, 53, 246, 0.996);
+    color: black;
     font-weight: bold;
     text-align: center;
     padding: 20px;
@@ -35,12 +35,12 @@ body {
 .form-card {
     max-width: 400px;
     width: 100%;
-    background-color:rgba(113, 219, 225, 0.374);
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: whitesmoke;
+    padding: 50px;
+    border-radius: 8px;
     font-size: 15px;
     font-weight: bold;
+    color: rgb(19, 23, 24);
 }
 
 .text-center {
