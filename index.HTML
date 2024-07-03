@@ -6,6 +6,7 @@
   <title>Restaurant Navbar</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href=>
+  <script src="./tanvi/Snacks/cart.js"></script>
   <style>
     .navbar-nav .nav-item .nav-link {
       color: black !important;
@@ -104,16 +105,17 @@
           <a class="nav-link" href="./pratiklandingveg/pratik/vaishnavi/veg.html">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./tanvi/Veg/Rice.html">Menu</a>
+          <a class="nav-link" href="./tanvi/Menu/menu.html">Menu</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="./vdo.mp4/about.html/about  us .html">About</a>
         </li>
         <li class="nav-item">
+          
           <a class="nav-link" href="./tanvi/contact us/Contact.html">Contact</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link btn btn-success text-white" href="./index.HTML">Our Restaurant</a>
+          <a class="nav-link btn btn-success text-white" href="./nav.html">Our Restaurant</a>
         </li>
       </ul>
       <form class="form-inline my-2 my-lg-0">
@@ -167,36 +169,8 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script>
-    let cart = [];
-    let total = 0;
 
-    document.querySelectorAll('.add-to-cart').forEach(button => {
-      button.addEventListener('click', function() {
-        const itemName = this.dataset.name;
-        const itemPrice = parseInt(this.dataset.price);
-
-        cart.push({ name: itemName, price: itemPrice });
-        total += itemPrice;
-
-        updateCart();
-      });
-    });
-
-    function updateCart() {
-      const cartItems = document.getElementById('cart-items');
-      cartItems.innerHTML = '';
-      
-      cart.forEach(item => {
-        const li = document.createElement('li');
-        li.textContent = `${item.name} - $${item.price}`;
-        cartItems.appendChild(li);
-      });
-
-      document.getElementById('total-price').textContent = total;
-      document.getElementById('cart-count').textContent = cart.length;
-    }
-  </script>
+    
 </body>
 </html>
   
